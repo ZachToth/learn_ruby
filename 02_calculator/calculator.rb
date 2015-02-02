@@ -11,3 +11,18 @@ def sum(num)
   num.inject {|sum,x| sum + x}
 end
 
+def multiply(*nums)
+  nums.push(1)
+  nums.inject {|sum, x| sum *= x}
+end
+
+def factorial(num)
+  if num = 0
+  num + 1
+  
+  while num > 1
+    num *= num
+    num -= 1
+  end
+
+end
